@@ -35,6 +35,12 @@ html.lenis body {
     background:rgb(235, 237, 239) ;
   }
 
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
   .custom-cursor {
     width: 12px;
     height: 12px;
