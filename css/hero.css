@@ -1,0 +1,88 @@
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    position: relative;
+    overflow: hidden;
+    right:330px;
+    top:80px;
+   
+}
+
+.circle-reveal {
+    width: 200px;
+    height: 200px;
+    background: #ff69b4;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scaleIn 1.5s ease-out forwards;
+}
+
+.inner-circle {
+    border: 12px solid white;  /* Thinner border */
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;  /* Start hidden */
+    animation: innerReveal 0.8s ease-out forwards;
+    animation-delay: 2s;  /* Longer delay */
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes innerReveal {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        width: 70px;  /* Smaller size */
+        height: 70px; /* Smaller size */
+        opacity: 1;
+    }
+}
+
+.lore-text {
+    margin-top: -25%;
+    opacity: 0;  /* Start hidden for GSAP animation */
+  
+  }
+  
+  .lore-text h2 {
+    font-size: 24px;
+    color: rgba(7, 7, 7, 0.8);
+    margin-bottom: 16px;
+    font-weight: 500;
+    margin-left: 50%;
+    
+    
+  }
+
+  .letterd{
+    font-family: "Love Light", serif;
+    color:#ff69b4;
+  }
+  
+  .lore-text p {
+    font-size: 18px;
+    color: rgba(7, 7, 7, 0.8);
+    line-height: 1.6;
+    margin-left: 50%;
+    font-family: "Raleway", serif;
+  }
