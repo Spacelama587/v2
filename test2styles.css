@@ -1,0 +1,120 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 2em;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .modal-close ion-icon {
+    font-size: 2em;
+    color: var(--color-accent);
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  .slider-content {
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  
+  .slide-image {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide-info {
+    padding: 1em 0;
+  }
+  
+  .slide-info h2 {
+    font-size: var(--font-regular);
+    margin-bottom: 0.5em;
+    font-family: "Raleway", serif;
+  }
+  
+  .slide-description {
+    font-size: var(--font-small);
+    margin-bottom: 1em;
+    font-family: "Raleway", serif;
+  }
+  
+  .slide-counter {
+    font-size: var(--font-tiny);
+    font-family: "Raleway", serif;
+  }
+  
+  .slider-navigation {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .slider-navigation button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-navigation button ion-icon {
+    font-size: 1.5em;
+    color: var(--color-accent);
+  }
+  
+  /* Animation classes */
+  .fade-in {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .fade-in.active {
+    opacity: 1;
+    visibility: visible;
+  }
